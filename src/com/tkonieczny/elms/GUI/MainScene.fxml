@@ -1,16 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="502.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #B388FF#B388FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
    <children>
-      <SplitPane dividerPositions="0.2185929648241206" layoutX="473.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="507.0" prefWidth="190.0">
+      <SplitPane dividerPositions="0.2185929648241206" layoutX="757.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="775.0" prefWidth="269.0" style="-fx-background-color: #512DA8#512DA8;">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="181.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="60.0" layoutX="12.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-anonymous-mask-128.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="66.0" layoutY="86.0" promptText="example name" />
+                  <Text layoutX="99.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj!" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="#ffeb91" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="181.0" style="-fx-background-color: #5E35B1#5E35B1;">
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="23.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-home-page-50.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="65.0" fitWidth="59.0" layoutX="32.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-machine-learning-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="74.0" layoutX="22.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-exam-128.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="97.0" fitWidth="68.0" layoutX="29.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-chat-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="77.0" layoutX="28.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-network-96.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="114.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strona Domowa" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="124.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Społeczność" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="118.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oceny" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="120.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="107.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strefa Edukacji" wrappingWidth="143.868408203125">
+                     <font>
+                        <Font name="Copperplate" size="17.0" />
+                     </font>
+                     <fill>
+                        <RadialGradient centerX="0.4382022471910113" centerY="0.6826923076923077" radius="0.5">
+                           <stops>
+                              <Stop color="#ff90c2" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Text>
+               </children></AnchorPane>
         </items>
       </SplitPane>
+      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="776.0" prefWidth="760.0" />
    </children>
 </AnchorPane>
