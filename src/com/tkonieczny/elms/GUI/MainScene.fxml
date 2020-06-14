@@ -5,13 +5,13 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #B388FF#B388FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #B388FF#B388FF;" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
    <children>
       <SplitPane dividerPositions="0.2185929648241206" layoutX="757.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="775.0" prefWidth="269.0" style="-fx-background-color: #512DA8#512DA8;">
         <items>
@@ -39,7 +39,7 @@
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="181.0" style="-fx-background-color: #5E35B1#5E35B1;">
                <children>
-                  <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="23.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="homeImage" fitHeight="74.0" fitWidth="71.0" layoutX="23.0" layoutY="48.0" onMouseClicked="#homeStageAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/icons8-home-page-50.png" />
                      </image></ImageView>
@@ -131,6 +131,6 @@
                </children></AnchorPane>
         </items>
       </SplitPane>
-      <Pane layoutX="-2.0" layoutY="-2.0" prefHeight="776.0" prefWidth="760.0" />
+      <BorderPane fx:id="contentPane" layoutY="-5.0" prefHeight="779.0" prefWidth="757.0" />
    </children>
 </AnchorPane>

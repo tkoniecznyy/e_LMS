@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" styleClass="bodybg" stylesheets="@bgStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="235.0" fitWidth="351.0" layoutX="406.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/postit-scrabble-to-do-todo-3299.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="659.0" layoutY="183.0" mnemonicParsing="false" text="Zapisz" />
+            <TextArea layoutX="509.0" layoutY="85.0" prefHeight="135.0" prefWidth="136.0" promptText="Notatka #1" />
+            <ImageView fitHeight="31.0" fitWidth="62.0" layoutX="19.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/baseline_access_alarms_black_18dp.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="timeHomeStage" layoutX="74.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="time" wrappingWidth="131.6013011932373" />
+            <Text fx:id="dateHomeStage" layoutX="78.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date" wrappingWidth="125.31450080871582" />
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="19.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/baseline_event_note_black_18dp.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="clockButton" layoutX="161.0" layoutY="33.0" mnemonicParsing="false" onAction="#showClockOnNewStage" text="Wyświetl zegar w osobnym oknie" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

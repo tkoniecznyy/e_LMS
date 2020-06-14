@@ -18,7 +18,7 @@ public class MainScene extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("e-Learning Management System");
         primaryStage.setScene(new Scene(root, 1024, 768));
         primaryStage.show();
     }
