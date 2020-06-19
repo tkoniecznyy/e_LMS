@@ -38,6 +38,21 @@ public class MainSceneController implements Initializable {
         Pane view = object.getPage("HomeStage");
         contentPane.setCenter(view);
     }
+    public void gradesStageAction(MouseEvent mouseEvent) {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("GradesStage");
+        contentPane.setCenter(view);
+    }
+    public void chatStageAction(MouseEvent mouseEvent) {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("ChatStage");
+        contentPane.setCenter(view);
+    }
+    public void EduStageAction(MouseEvent mouseEvent) {
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPage("EduStage");
+        contentPane.setCenter(view);
+    }
 
     private void showDateHomeStage(){
         //Date
