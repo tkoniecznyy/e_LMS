@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.GradesController">
+<BorderPane maxHeight="779.0" maxWidth="757.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.GradesController">
    <bottom>
       <AnchorPane prefHeight="783.0" prefWidth="757.0" BorderPane.alignment="CENTER">
          <children>

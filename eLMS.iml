@@ -14,5 +14,6 @@
     <orderEntry type="library" name="com.gluonhq:charm-down-common:2.0.0" level="project" />
     <orderEntry type="library" name="com.gluonhq:charm-down-plugin-display:3.0.0" level="project" />
     <orderEntry type="library" name="charm-glisten-4.4.1" level="project" />
+    <orderEntry type="library" name="commons-codec-1.9" level="project" />
   </component>
 </module>
