@@ -23,6 +23,7 @@ public class LoginSceneController {
     public void loginButtonClicked(ActionEvent actionEvent) throws IOException {
        Boolean authOfLogin =  httpLinking.getAuthOfLogin(new LoginInfo(loginTextField.getText(),passwordText.getText()));
         if (authOfLogin == true){
+            UserData.loggedUser = httpLinking.getInfoAboutLoggedUser();
             MainScene sceneAfterLog = new MainScene();
             sceneAfterLog.start(new Stage());
         }

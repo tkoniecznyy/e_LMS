@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
@@ -22,7 +22,6 @@
                         <Image url="@../img/icons8-anonymous-mask-128.png" />
                      </image>
                   </ImageView>
-                  <TextField layoutX="66.0" layoutY="86.0" promptText="example name" />
                   <Text layoutX="99.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj!" wrappingWidth="143.868408203125">
                      <font>
                         <Font name="Copperplate" size="17.0" />
@@ -36,6 +35,19 @@
                         </RadialGradient>
                      </fill>
                   </Text>
+                  <Text fx:id="nameOfUserText" layoutX="99.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="example name" wrappingWidth="135.9830722808838">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#da5a5a" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="181.0" style="-fx-background-color: #5E35B1#5E35B1;">
                <children>
@@ -43,7 +55,7 @@
                      <image>
                         <Image url="@../img/icons8-home-page-50.png" />
                      </image></ImageView>
-                  <ImageView fitHeight="65.0" fitWidth="59.0" layoutX="32.0" layoutY="148.0" onMouseClicked="#EduStageAction" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="65.0" fitWidth="59.0" layoutX="32.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/icons8-machine-learning-64.png" />
                      </image>
@@ -58,7 +70,7 @@
                         <Image url="@../img/icons8-chat-64.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="101.0" fitWidth="77.0" layoutX="28.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="101.0" fitWidth="77.0" layoutX="28.0" layoutY="468.0" onMouseClicked="#SocialStageAction" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/icons8-network-96.png" />
                      </image>
@@ -131,6 +143,13 @@
                </children></AnchorPane>
         </items>
       </SplitPane>
-      <BorderPane fx:id="contentPane" layoutY="-5.0" prefHeight="779.0" prefWidth="757.0" />
+      <BorderPane fx:id="contentPane" layoutY="-5.0" prefHeight="779.0" prefWidth="757.0">
+         <center>
+            <ImageView fitHeight="649.0" fitWidth="683.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../img/logo2.png" />
+               </image>
+            </ImageView>
+         </center></BorderPane>
    </children>
 </AnchorPane>

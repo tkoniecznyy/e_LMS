@@ -6,9 +6,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="779.0" maxWidth="757.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" styleClass="bodybg" stylesheets="@bgStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.MainSceneController">
+<BorderPane maxHeight="779.0" maxWidth="757.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" styleClass="bodybg" stylesheets="@bgStyle.css" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.HomeStageController">
    <top>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -35,4 +38,27 @@
          </children>
       </AnchorPane>
    </top>
+   <left>
+      <AnchorPane prefHeight="544.0" prefWidth="603.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="98.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dane Użytkownika">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#3c63ff" />
+                        <Stop color="#0033ff" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="Courier New Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="nameOfUserText" layoutX="108.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="195.12624549865723" />
+            <Text fx:id="emailText" layoutX="112.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="228.95485877990723" />
+            <Text fx:id="privilegesText" layoutX="120.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="165.31752967834473" />
+            <Button fx:id="teacherPanelButton" layoutX="434.0" layoutY="142.0" mnemonicParsing="false" onAction="#openTeacherPanel" text="Panel Nauczyciela" />
+         </children>
+      </AnchorPane>
+   </left>
 </BorderPane>

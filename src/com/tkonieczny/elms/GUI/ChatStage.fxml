@@ -12,17 +12,17 @@
    <left>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView layoutY="83.0" prefHeight="576.0" prefWidth="200.0" />
-            <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz użytkownika" />
+            <ListView fx:id="listUserDisplay" layoutY="83.0" prefHeight="576.0" prefWidth="200.0" />
+            <Text layoutX="14.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Użytkownicy serwera" />
          </children>
       </AnchorPane>
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TextArea editable="false" layoutX="2.0" layoutY="84.0" prefHeight="499.0" prefWidth="537.0" />
-            <TextField layoutX="14.0" layoutY="594.0" prefHeight="77.0" prefWidth="333.0" promptText="example message" />
-            <Button layoutX="400.0" layoutY="619.0" mnemonicParsing="false" text="Wyślij" />
+            <TextArea fx:id="messagesTextArea" editable="false" layoutX="2.0" layoutY="84.0" prefHeight="499.0" prefWidth="537.0" />
+            <TextField fx:id="textMessage" layoutX="14.0" layoutY="594.0" prefHeight="77.0" prefWidth="333.0" promptText="example message" />
+            <Button fx:id="sendMessageButton" layoutX="400.0" layoutY="619.0" mnemonicParsing="false" onAction="#sendMessageButtonClicked" text="Wyślij" />
          </children>
       </AnchorPane>
    </center>

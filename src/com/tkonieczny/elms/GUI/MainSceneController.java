@@ -1,5 +1,6 @@
 package com.tkonieczny.elms.GUI;
 
+import com.tkonieczny.elms.classes.UserData;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -28,9 +29,7 @@ public class MainSceneController implements Initializable {
     @FXML
     private BorderPane contentPane;
     @FXML
-    private Text dateHomeStage, timeHomeStage;
-    @FXML
-    private Button clockButton;
+    private Text nameOfUserText;
 
 
     public void homeStageAction(MouseEvent mouseEvent) {
@@ -48,48 +47,16 @@ public class MainSceneController implements Initializable {
         Pane view = object.getPage("ChatStage");
         contentPane.setCenter(view);
     }
-    public void EduStageAction(MouseEvent mouseEvent) {
+    public void SocialStageAction(MouseEvent mouseEvent) {
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPage("EduStage");
         contentPane.setCenter(view);
     }
 
-    private void showDateHomeStage(){
-        //Date
-      //  DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-      //  Date date = new Date();
-      //  dateHomeStage.setText(dateFormat.format(date));
-        //Time
-        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {
-            LocalTime currentTime = LocalTime.now();
-            LocalDate currDate = LocalDate.now();
-            timeHomeStage.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
-            dateHomeStage.setText(currDate.getDayOfMonth() + "."+ currDate.getMonthValue() + "." + currDate.getYear() +"r.");
-        }),
-                new KeyFrame(Duration.seconds(1))
-        );
-        clock.setCycleCount(Animation.INDEFINITE);
-        clock.play();
-    }
-
-
-    public void showClockOnNewStage(ActionEvent actionEvent) {
-        Clock clock = new Clock();
-        try {
-            clock.start(new Stage());
-        } catch (Exception e) {
-            e.printStackTrace();
-            e.getMessage();
-        }
-    }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        showDateHomeStage();
-
+        nameOfUserText.setText(UserData.loggedUser.getUserInfo().getName() + " "+ UserData.loggedUser.getUserInfo().getSurname());
 
     }
-
-
 }

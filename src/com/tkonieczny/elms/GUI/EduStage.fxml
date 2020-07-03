@@ -1,11 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-
-<BorderPane maxHeight="779.0" maxWidth="757.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.EduController">
+<BorderPane maxHeight="779.0" maxWidth="757.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tkonieczny.elms.GUI.EduController">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="102.0" layoutX="97.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-facebook-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="98.0" fitWidth="108.0" layoutX="492.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-instagram-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="111.0" layoutX="294.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-email-96.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="77.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow us on Facebook">
+               <font>
+                  <Font name="Baghdad Regular" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.30288461538461536">
+                     <stops>
+                        <Stop color="#ae008e" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="456.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow us on Instagram">
+               <font>
+                  <Font name="Baghdad Regular" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9807692307692307">
+                     <stops>
+                        <Stop color="#ae008e" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="276.0" layoutY="594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Write to us on our email">
+               <font>
+                  <Font name="Baghdad Regular" size="17.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.9278846153846154">
+                     <stops>
+                        <Stop color="#ae008e" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="241.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OUR SOCIAL MEDIA">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#ae008e" />
+                        <Stop color="#f86969" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
    </center>
 </BorderPane>

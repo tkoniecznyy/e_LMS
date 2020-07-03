@@ -11,33 +11,45 @@ public class Alerts {
         errorAlert.setContentText("Proszę sprawdzić poprawność loginu i hasła, a nstępnie spróbowac ponownie!");
         errorAlert.showAndWait();
     }
-  /*  static public void allIsOKDialog(){
+
+    static public void messError(){
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("NIE WPISANO TREŚCI WIADMOSĆI");
+        errorAlert.setContentText("Pole wiadomości jest puste, wpisz jakąś wiadmość a następnie ponów próbę!");
+        errorAlert.showAndWait();
+    }
+
+    static public void messConnectionError(){
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("BŁĄD PODCZAS WYSYŁANIA WIADOMOŚCI");
+        errorAlert.setContentText("Wystąpił błąd podczas wysyłania wiadomości - sprawdź swoje połączenie a następnie ponów próbę");
+        errorAlert.showAndWait();
+    }
+
+
+    static public void privilegesError(){
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setHeaderText("BRAK UPRAWNIEŃ");
+        errorAlert.setContentText("Nie posiadasz uprawnień do otwarcia tego panelu - jeżeli jesteś nauczycielem skontaktuj się z administratorem");
+        errorAlert.showAndWait();
+    }
+
+
+     static public void allIsOKDialog(){
         Alert allIsOK= new Alert(Alert.AlertType.CONFIRMATION);
-        allIsOK.setTitle("Potwierdzenie złożenia rezerwacji");
-        allIsOK.setHeaderText("Rezerwacja dokonana pomyślnie!");
-        allIsOK.setContentText("Rezewacja przebiegła pomyślnie! Dziękujemy i życzymy miłego seansu :) \n\nPrzypominamy o konieczności uiszczenia opłaty nie póżniej niż 15min przed rozpoczęciem seansu.");
+        allIsOK.setTitle("Potwierdzenie dodania oceny");
+        allIsOK.setHeaderText("Ocena dodana pomyślnie!");
+        allIsOK.setContentText("Dodałeś/aś ocenę pomyślnie! \n\n Możesz zamknąć okno panelu");
         allIsOK.showAndWait();
 
 
     }
 
-    static public void noFilmError(){
-        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-        errorAlert.setHeaderText("NIE WYBRANO FILMU");
-        errorAlert.setContentText("Proszę wcisnąć obrazek (po lewej stronie) z filmem, na który dokonywana jest rezerwacja i spróbowac ponownie!");
-        errorAlert.showAndWait();
-    }
-
     static public void noDataError(){
         Alert errorAlert = new Alert(Alert.AlertType.ERROR);
         errorAlert.setHeaderText("BRAK DANYCH");
-        errorAlert.setContentText("Proszę uzupełnić wszytskie pola z danymi dokonującego rezerwacji i spróbowac ponownie!");
+        errorAlert.setContentText("Proszę wypełnić wszytskie pola oraz zaznaczyć przedmiot i spróbowac ponownie!");
         errorAlert.showAndWait();
     }
-    static public void sameSeatsAreReservedError() {
-        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-        errorAlert.setHeaderText("TE MIEJSCA SA JUZ ZAJETE");
-        errorAlert.setContentText("Miejsca wybrane przez Pana/Panią są juz zajęte przez innego użytkownika!\nProszę wybrać inne miejsca na sali.");
-        errorAlert.showAndWait();
-    } */
+
 }
